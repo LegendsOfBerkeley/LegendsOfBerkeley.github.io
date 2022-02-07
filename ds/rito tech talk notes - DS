@@ -1,0 +1,134 @@
+Riot Tech Talk
+
+functional programming
+Andre // Chris, Zach
+
+- compile time guarantees; - ruby; lisp, scheme
+
+
+1980's - 
+OOP for GUIs. 
+CPU image? functional programming - 
+
+MULTI-CORE is why we do functional programming. 
+Multifunctional programming
+Meh vs Truly great programmers
+
+NOT a choice of language
+
+most bugs arise from mutable states . mutable algorithms are good for system performance, but causes trouble for RIOT.
+
+Reading from a socket should be self-contained.
+
+compose functions together: g(f(x))
+referencially - transparent = can switch it out
+	An expression is said to be referentially transparent if it can be replaced with its value without changing the behavior of a program
+
+Haskell - no idea what code does until you actually read the code ( the inputs ).
+
+
+
+- Immutability - 
+
+"your object should be ready to go once you build it."
+
+- Immutability 2 -
+
+Clojure?
+persistent Data structure
+
+hash tree
+efficient copy-on-wright hash tree
+
+zfs, 
+
+
+mapping: "i have an x, I need a y"
+
+
+
+val nums = Seq(1,2,3,4)
+
+def isEven(num: Int) : Boolean = {num % 2 == 0}
+
+val evens1 = nums.filter(isEven)
+
+val evens2 = nums.Filter(isEven)
+
+
+
+
+val nums = Seq(1,2,3,4)
+
+val numStrings1 = nums.map(_.toString)
+
+val numStrings2 = nums.par.map(_.toString)
+	- treat it as a parallel thing
+	- 
+
+
+GPU is a massively parallel architecture
+
+Ericcson phone?  -  
+Programming lanaguage : Scala
+
+
+
+Lazy Values - 
+only works because it's immutable.
+- only evaluates on its first call
+
+
+- CATEGORY THEORY - 
+
+'applicative' 'functor' 'monad'
+
+
+nested hash? very useful to have monads. 
+
+
+thenewcircle.com/s/post/1577/may_your_data_ever_be_coherent_daniel_spiewak_video
+
+skillsmatter.com/skillscasts/5070-twins-fp-and-oop
+
+https://skillsmatter.com/skillscasts/4971-domain-driven-design-with-scott-wlaschin
+
+http://vimeo.com/49718712
+
+...
+...
+
+
+
+Rich Hickey on YT
+
+
+Teambuilder:
+7 +- 3 for scrums; 20 ppl
+5-8 engineers
+
+
+4 ways to prep for working for Riot
+- refactor a code-base toward ascessibility
+- deploy / learn how to weaponise your software
+- learn differences between tests (load tests, unit tests, etc)
+- ** social coding; go onto github, etc
+	- avoid pissing on ppl's code when working
+
+KPI - Keep Performance 
+
+Internships at SANTA MONICA
+
+
+HOW WE WORK
+
+T-shaped; breadth & depth (Mr. T)
+
+Alignment & Autonomy
+
+
+
+
+
+
+

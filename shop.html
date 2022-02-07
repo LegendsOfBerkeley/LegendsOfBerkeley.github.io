@@ -1,0 +1,213 @@
+---
+layout: default
+title: Berkeley Legends | Shop
+---
+
+<!-- <style>
+.cover {
+  	background:#212F3C;
+  	text-align: center;
+  	padding-top:10px;
+  	color:white;
+  	font-family: Oxygen, sans-serif;
+  	font-size: 1.2em;
+  	position: relative;
+  	height:56px;
+  }
+.cover::before {
+    background-image: url('/images/execs/patrick.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: 100% 30%;
+    opacity: 0.8;
+    position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+  }
+  .overlay{
+    position: absolute;
+    bottom: 0;
+    opacity: 100;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+</style> -->
+<script src="store.js" async></script>
+
+<div id="shop"></div>
+
+
+<div class="imagehead">
+    <div class="picture">
+    <img src="images/header_1.jpg" style="width:2000px; object-position: 50% -100px">
+    </div>
+    <div class = "shoptitle">
+        BL Shop
+    </div>
+</div>
+
+<div  class="pad-btn">
+    <!-- buttons -->
+    <a href="#wow" class="shopbtn shopbtn-default shopbtn-lg shopbtn-yellow" role="button">HERE</a>
+    <!-- button/ -->
+
+    <div class="submenu">
+        <img src="images/header_1.jpg" style="width: 42px; height: 42px; position: relative; top: -12px; -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    	-moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);"></img>
+        <div id="shopping-cart">
+            <div class="cart-items">
+            </div>
+            <div class ="name-insert" id= "name">
+              <label for="full-name"> Full Name </label>
+              <input type="text" name="full-name" id="full-name">
+              <label for="email"> Email Address </label>
+              <input type="text" name="email" id="email">
+              <button id="switchToP"> Submit to purchase </button>
+            </div>
+            <div class="cart-total" id="cart-total">
+                <strong class="cart-total-title">Total:</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <div class="btn btn-purchase" id="btn btn-purchase">Checkout</div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div id="wow" class="row"> Section
+        <div class="item-container">
+            <div class = "shop-item">
+                <div class = "shop-item-title"> cool1</div>
+                <div class = "shop-item-image"> <img src="images/header_1.jpg" style="width: 25%; height: 25%;"></div>
+                <div class = "shop-item-price"> 3</div>
+                <div class = "btn shop-item-button"> Add To Cart </div>
+            </div>
+            <div class = "shop-item">
+                <div class = "shop-item-title"> cool2</div>
+                <div class = "shop-item-image"> <img src="images/header_1.jpg" style="width: 25%; height: 25%;"></div>
+                <div class = "shop-item-price"> 4</div>
+                <div class = "btn shop-item-button"> Add To Cart </div>
+            </div>
+            <div class = "shop-item">
+                <div class = "shop-item-title"> cool3</div>
+                <div class = "shop-item-image"> <img src="images/header_1.jpg" style="width: 25%; height: 25%;"></div>
+                <div class = "shop-item-price"> 5</div>
+                <div class = "btn shop-item-button"> Add To Cart </div>
+            </div>
+              <!--- <script>
+                  let x ="", i;
+                  const items = ["pants", "merch", "stars", "shirt", "yeet"]
+                  for (i=0; i < items.length; i++) {
+                      let item = items[i]
+                      x = x + `<div class = "shop-item"> ${item}
+                                <div class = "shop-item-title"> ${cool}</div>
+                                <div class = "shop-item-image"> <img src=${}</div>
+                                <div class = "shop-item-price"> ${3}</div>
+                                <div class = "shop-item-button> Add To Cart <div>"
+                              </div>
+                              `;
+                  }
+                  document.getElementById("allitems").innerHTML = x;
+              </script> --->
+        </div>
+    </div>
+    <div class="row"> Section
+        <div class="item-container">
+            <div class = "shop-item">
+                <div class = "shop-item-title"> cool</div>
+                <div class = "shop-item-image"> <img src="images/header_1.jpg" style="width: 25%; height: 25%;"></div>
+                <div class = "shop-item-price"> ${3}</div>
+                <div class = "btn shop-item-button"> Add To Cart </div>
+            </div>
+            <div class = "shop-item">
+                <div class = "shop-item-title"> cool</div>
+                <div class = "shop-item-image"> <img src="images/header_1.jpg" style="width: 25%; height: 25%;"></div>
+                <div class = "shop-item-price"> ${3}</div>
+                <div class = "btn shop-item-button"> Add To Cart </div>
+            </div>
+            <div class = "shop-item">
+                <div class = "shop-item-title"> cool</div>
+                <div class = "shop-item-image"> <img src="images/header_1.jpg" style="width: 25%; height: 25%;"></div>
+                <div class = "shop-item-price"> ${3}</div>
+                <div class = "btn shop-item-button"> Add To Cart </div>
+            </div>
+              <!--- <script>
+                  let x ="", i;
+                  const items = ["pants", "merch", "stars", "shirt", "yeet"]
+                  for (i=0; i < items.length; i++) {
+                      let item = items[i]
+                      x = x + `<div class = "shop-item"> ${item}
+                                <div class = "shop-item-title"> ${cool}</div>
+                                <div class = "shop-item-image"> <img src=${}</div>
+                                <div class = "shop-item-price"> ${3}</div>
+                                <div class = "shop-item-button> Add To Cart <div>"
+                              </div>
+                              `;
+                  }
+                  document.getElementById("allitems").innerHTML = x;
+              </script> --->
+        </div>
+      </div>
+        <div class="row"> Section
+            <div class="item-container">
+                <div class = "shop-item">
+                    <div class = "shop-item-title"> cool</div>
+                    <div class = "shop-item-image"> <img src="images/header_1.jpg" style="width: 25%; height: 25%;"></div>
+                    <div class = "shop-item-price"> ${3}</div>
+                    <div class = "btn shop-item-button"> Add To Cart </div>
+                </div>
+                <div class = "shop-item">
+                    <div class = "shop-item-title"> cool</div>
+                    <div class = "shop-item-image"> <img src="images/header_1.jpg" style="width: 25%; height: 25%;"></div>
+                    <div class = "shop-item-price"> ${3}</div>
+                    <div class = "btn shop-item-button"> Add To Cart </div>
+                </div>
+                <div class = "shop-item">
+                    <div class = "shop-item-title"> cool</div>
+                    <div class = "shop-item-image"> <img src="images/header_1.jpg" style="width: 25%; height: 25%;"></div>
+                    <div class = "shop-item-price"> ${3}</div>
+                    <div class = "btn shop-item-button"> Add To Cart </div>
+                </div>
+                  <!--- <script>
+                      let x ="", i;
+                      const items = ["pants", "merch", "stars", "shirt", "yeet"]
+                      for (i=0; i < items.length; i++) {
+                          let item = items[i]
+                          x = x + `<div class = "shop-item"> ${item}
+                                    <div class = "shop-item-title"> ${cool}</div>
+                                    <div class = "shop-item-image"> <img src=${}</div>
+                                    <div class = "shop-item-price"> ${3}</div>
+                                    <div class = "shop-item-button> Add To Cart <div>"
+                                  </div>
+                                  `;
+                      }
+                      document.getElementById("allitems").innerHTML = x;
+                  </script> --->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <header class="cover"><div class="overlay">SHOP</div></header>
+
+<div class="container">
+    <div class="row">
+<left>
+
+<!-- </left>
+<h1> Apparel </h1>
+<div class="row">
+    <div class="grid-container top-margin pad-horizontal">
+        HERE each item copy this>>> <div class="grid-item"><img src="images/IMG_7027.jpg" class="image"></div>
+    </div>
+</div>
+</div>
+</div>
+-->

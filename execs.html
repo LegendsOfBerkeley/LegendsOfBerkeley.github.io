@@ -1,0 +1,183 @@
+---
+layout: default
+title: Berkeley Legends | Exec Team
+---
+
+	<header class="nav-space"></header>
+
+
+<script>
+function toggle_team(id) {
+    var a = document.getElementById("exec");
+	var b = document.getElementById("intern");
+	var c = document.getElementById("alumni");
+    if (id == 1){
+		a.style.display = "block";
+		b.style.display = "none";
+		c.style.display = "none";
+	}
+	else if (id == 2){
+		a.style.display = "none";
+		b.style.display = "block";
+		c.style.display = "none";
+	}
+	else if (id == 3){
+		a.style.display = "none";
+		b.style.display = "none";
+		c.style.display = "block";
+	}
+}
+</script>
+
+<script>
+window.onload = function() {
+  toggle_team(1);
+};
+</script>
+
+<div class="container">
+
+	<div class="row">
+
+		<!-- Article main content -->
+		<article class="col-sm-12 maincontent">
+			<div class="row page-head"><div class="col-sm-1"></div><div class="col-sm-7 pad-vertical">
+				<h1 class="page-title">Executive Team</h1>
+					<p>Our club events and community are led by the Execs, from planning tournaments to leading LAN parties to graphic design and more. </p>
+					</div>
+			</div>
+
+<center>
+<p class="btn btn-lg btn-yellow" onclick="toggle_team(1)" style="margin-right:50px;">Executive Board</p>
+<p class="btn btn-lg btn-yellow" onclick="toggle_team(2)" style="margin-right:50px;">Board Interns</p>
+<p class="btn btn-lg btn-yellow" onclick="toggle_team(3)" style="margin-right:50px;">Alumni</p>
+</center>
+
+
+	<!-- container -->
+				<div class="col-lg-12" id="exec">
+				<center><h1>Executive Board</h1></center>
+				<br>
+				<ul class="col-lg-12">
+				{% for member in site.data.exec %}
+<div class="row">
+					<li class="col-lg-3" id="#{{ member.id }}">
+						<img class="img-circle" src="./images/execs/{{ member.pic }}" width="230" height="230">
+					</li>
+
+					<div id="{{ member.id }}" class="col-lg-9">
+						<h3><strong>{{ member.name }}</strong> | {{ member.ign}}</h3>
+						<h4><strong>{{ member.position }}</strong></h4>
+						<h5>{{ member.major }}</h5>
+						<br>
+						<div class="person-description">
+							<p><strong>Favorite Champ/Lane:</strong> {{ member.champLane }}</p>
+							{% if member.hobbies %}
+								<p><strong>What do you like to do besides League?</strong> {{ member.hobbies }}</p>
+							{% endif %}
+							{% if member.whyBL %}
+								<p><strong>Why are you in Berkeley Legends?</strong> {{ member.whyBL }}</p>
+							{% endif %}
+							{% if member.email %}
+								<a href="mailto:{{ member.email }}"><i class="fa fa-envelope"></i></a>
+							{% endif %}
+<hr>
+						</div>
+					</div>
+</div>
+				{% endfor %}
+				</ul>
+				</div>
+
+
+				<div class="col-lg-12" id="intern">
+				<center><h1>Board Interns</h1></center>
+				<br>
+				<ul class="col-lg-12">
+				{% for member in site.data.intern %}
+<div class="row">
+					<li class="col-lg-3" id="#{{ member.id }}">
+						<img class="img-circle" src="./images/execs/{{ member.pic }}" width="230" height="230">
+					</li>
+
+					<div id="{{ member.id }}" class="col-lg-9">
+						<h3><strong>{{ member.name }}</strong> | {{ member.ign}}</h3>
+						<h4><strong>{{ member.position }}</strong></h4>
+						<h5>{{ member.major }}</h5>
+						<br>
+						<div class="person-description">
+							<p><strong>Favorite Champ/Lane:</strong> {{ member.champLane }}</p>
+							{% if member.hobbies %}
+								<p><strong>What do you like to do besides League?</strong> {{ member.hobbies }}</p>
+							{% endif %}
+							{% if member.whyBL %}
+								<p><strong>Why are you in Berkeley Legends?</strong> {{ member.whyBL }}</p>
+							{% endif %}
+							{% if member.email %}
+								<a href="mailto:{{ member.email }}"><i class="fa fa-envelope"></i></a>
+							{% endif %}
+<hr>
+						</div>
+					</div>
+</div>
+				{% endfor %}
+				</ul>
+				</div>
+
+
+				<div class="col-lg-12" id="alumni">
+				<center><h1>Alumni</h1></center>
+				<br>
+				<ul class="col-lg-12">
+				{% for member in site.data.alumni %}
+<div class="row">
+					<li class="col-lg-3" id="#{{ member.id }}">
+						<img class="img-circle" src="/images/alumni/{{ member.pic }}" width="230" height="230">
+					</li>
+
+					<div id="{{ member.id }}" class="col-lg-9">
+						<h3><strong>{{ member.name }}</strong> | {{ member.ign }}</h3>
+						{% if member.position %}
+							<h4><strong>{{ member.position }}</strong></h4>
+						{% endif %}
+						<h5>{{ member.major }}</h5>
+						<br>
+						<div class="person-description">
+							<p><strong>Favorite Champ/Lane:</strong> {{ member.champLane }}</p>
+							{% if member.hobbies %}
+								<p><strong>What do you like to do besides League?</strong> {{ member.hobbies }}</p>
+							{% endif %}
+							{% if member.whyBL %}
+								<p><strong>Why are you in Berkeley Legends?</strong> {{ member.whyBL }}</p>
+							{% endif %}
+							{% if member.email %}
+								<a href="mailto:{{ member.email }}"><i class="fa fa-envelope"></i></a>
+							{% endif %}
+<hr>
+						</div>
+					</div>
+</div>
+				{% endfor %}
+				</ul>
+				</div>
+
+			</article>
+			<!-- /Article -->
+
+			<!-- Sidebar -->
+			<div class="col-sm-3"></div><aside class="col-sm-6">
+
+				<center><div class="widget">
+					<hr>
+					<h4>Interested in joining the exec team family?</h4>
+					<address>
+						<br> We recruit for exec interns at the beginning of every semester! Come say hello at our events and email us at <a href="mailto:#">berkeleyleagueoflegends@gmail.com</a>
+					</address>
+					<hr>
+				</div>
+</center>
+			</aside>
+			<!-- /Sidebar -->
+
+		</div>
+	</div>	<!-- /container -->
